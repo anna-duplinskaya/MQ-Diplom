@@ -462,13 +462,13 @@
           <footer class="product-footer">
             <div class="product-prices">
               <span class="product-price-old">
-                <span class="product-price-value">1000 ₽</span>
+                1000 ₽
               </span>
               <span class="product-price">
-                <span class="product-price-value">800 ₽</span>
+                800 ₽
               </span>
             </div>
-            <button class="product-button" type="button">В магазин</button>
+            <button class="form-button product-button" type="button">В магазин</button>
           </footer>
         </div>
       </article>
@@ -501,10 +501,10 @@
           <footer class="product-footer">
             <div class="product-prices">
               <span class="product-price">
-                <span class="product-price-value">3500 ₽</span>
+                3500 ₽
               </span>
             </div>
-            <button class="product-button" type="button">В магазин</button>
+            <button class="form-button product-button" type="button">В магазин</button>
           </footer>
         </div>
       </article>
@@ -535,13 +535,13 @@
           <footer class="product-footer">
             <div class="product-prices">
               <span class="product-price-old">
-                <span class="product-price-value">500 ₽</span>
+                500 ₽
               </span>
               <span class="product-price">
-                <span class="product-price-value">400 ₽</span>
+                400 ₽
               </span>
             </div>
-            <button class="product-button" type="button">В магазин</button>
+            <button class="form-button product-button" type="button">В магазин</button>
           </footer>
         </div>
       </article>
@@ -571,62 +571,52 @@
   </footer>
 
 
+  <div class="popup popup_hidden">
+    <div class="popup-content-wrap">
+      <div class="popup-content">
+        <button class="popup-close-button" type="button">
+          <span class="visually-hidden-text">Закрыть окно</span>
+        </button>
 
-  <input type="checkbox" id="popup1" class="popup-toggle">
-  <div class="popup">
-    <label for="popup1" class="popup-close-background"> </label>
-    <div class="popup-content">
-      <label for="popup1" class="popup-close">&times</label>
-      <h2 class="popup-title">Ваш фидбек</h2>
+        <h2 class="popup-title">Ваш фидбек</h2>
 
-
-      <form class="form">
-        <div class="form-popup-select">
-          <label class="select-popup">
-            <span class="select-label">Как часто в заходите на сайт?</span>
-            <select class="select">
+        <form class="form">
+          <div class="form-popup-fieldgroup">
+            <label class="form-popup-field-label" for="often-select">Как часто в заходите на сайт?</label>
+            <select class="select" id="often-select">
               <option value="every-day" selected>Почти каждый день</option>
               <option value="once-in-some-days">Раз в несколько дней</option>
               <option value="once-in-some-weeks">Раз в несколько недель</option>
               <option value="sometimes-in-year">Несколько раз в год</option>
             </select>
-          </label>
-        </div>
-        <div class="radio-form-popup">
-          <span class="radio-text">Вы подписаны на e-mail рассылку?</span>
-          <div class="radio-button">
-            <label class="radio-popup">
-              <input type="radio" class="radio" name="subscribed" value="yes" required>
-              <span class="radio-text-popup">Да</span>
-            </label>
-            <label class="radio-popup">
-              <input type="radio" class="radio" name="subscribed" value="no" required>
-              <span class="radio-text-popup">Нет</span>
-            </label>
           </div>
-        </div>
-        <div class="field-form-popup">
-          <label class="field-popup">
-            <span class="field-label">Расскажите, какой контент вы хотели бы видеть на нашем сайте?</span>
-            <textarea class="field textarea" placeholder="Может, больше рецептов?" required></textarea>
-          </label>
-        </div>
-        <div class="form-popup">
-          <button type="submit" class="button-popup">Отправить</button>
-        </div>
-      </form>
+
+          <div class="form-popup-fieldgroup">
+            <p class="form-popup-field-label">Вы подписаны на e-mail рассылку?</p>
+            <div class="radio-button">
+              <label class="radio-popup">
+                <input type="radio" class="radio" name="subscribed" value="yes" required>
+                <span class="radio-text-popup">Да</span>
+              </label>
+              <label class="radio-popup">
+                <input type="radio" class="radio" name="subscribed" value="no" required>
+                <span class="radio-text-popup">Нет</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="form-popup-fieldgroup">
+            <label class="form-popup-field-label" for="additional-text">
+              Расскажите, какой контент вы хотели бы видеть на нашем сайте?
+            </label>
+            <textarea class="field-input popup-textarea" id="additional-text" placeholder="Может, больше рецептов?" required></textarea>
+          </div>
+
+          <button type="submit" class="form-button popup-button">Отправить</button>
+        </form>
+      </div>
     </div>
   </div>
-
-  <label for="popup1" class="btn">Открыть окно</label>
-
-
-
-
-
-
-
-
 
 
 
